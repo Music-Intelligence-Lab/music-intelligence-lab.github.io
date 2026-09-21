@@ -75,8 +75,7 @@ list_title: false
       <p>DiArMaqAr is an open-source, open-access web platform for exploring Arabic maqām theory and practice. It is the first framework to unify tanāghīm (tuning systems), ajnās (tetrachords), and maqāmāt (melodic modes) in a single interactive environment, drawing on both historical treatises and living performance practice.</p>
       <p>The archive is developed by Khyam Allami with the lab and integrates network-analysis views that expose connections and family structures across the maqām world.</p>
       <p class="project-links">
-        <a href="https://diarmaqar.netlify.app/" target="_blank">Open the archive</a> &nbsp;·&nbsp;
-        <a href="{{ '/experiments/ResultingNetworks.html' | relative_url }}" target="_blank">Interactive network</a>
+        <a href="https://diarmaqar.netlify.app/" target="_blank">Open the archive</a>
       </p>
     </div>
   </article>
