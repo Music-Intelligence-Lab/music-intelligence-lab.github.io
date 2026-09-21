@@ -2,10 +2,11 @@
 title: Music Intelligence Lab
 email: jb50@aub.edu.lb
 description: >-
-  Exploring the intersection of music, technology, and intelligence through
-  science, mathematics, and machine learning rooted in cultural traditions.
+  Music, technology, and intelligence at the American University of Beirut.
+  New instruments, machine learning for music, and computational musicology of
+  the Arab region.
 baseurl: ""
-url: "https://music-intelligence-lab.github.io"
+url: "https://musicintelligencelab.com"
 
 # Build settings
 markdown: kramdown
