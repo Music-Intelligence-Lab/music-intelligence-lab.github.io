@@ -22,31 +22,6 @@ The Music Intelligence Lab is a small group of researchers, students, and collab
   </div>
 
   <div class="team-member">
-    <img src="{{ '/assets/images/khyam-allami.png' | relative_url }}" alt="Khyam Allami" class="team-photo">
-    <h3>Khyam Allami</h3>
-    <p class="team-role">Postdoctoral Fellow: Arabic Maqam Archive, Maqam Networks</p>
-    <div class="team-website">
-      <a href="https://khyamallami.com" target="_blank">khyamallami.com</a>
-    </div>
-  </div>
-
-  <div class="team-member">
-    <div class="team-photo-placeholder" aria-hidden="true">EM</div>
-    <h3>Elsa Maalouf</h3>
-    <p class="team-role">Co-PI, Music in Motion: Dance and Movement</p>
-    <div class="team-website">
-      <a href="https://www.aub.edu.lb/msfea/departments/che/Pages/default.aspx" target="_blank">AUB Chemical Engineering</a>
-    </div>
-  </div>
-
-  <div class="team-member">
-    <div class="team-photo-placeholder" aria-hidden="true">OC</div>
-    <h3>Olivier Chiniara</h3>
-    <p class="team-role">Co-grantee, Music in Motion: Biomechanics and Movement</p>
-    <div class="team-website"></div>
-  </div>
-
-  <div class="team-member">
     <div class="team-photo-placeholder" aria-hidden="true">SS</div>
     <h3>Samir Shaker</h3>
     <p class="team-role">Research Assistant: Music Interfaces and Live Pipelines</p>
@@ -65,6 +40,15 @@ The Music Intelligence Lab is a small group of researchers, students, and collab
 ## Alumni
 
 <div class="team-grid">
+
+  <div class="team-member">
+    <img src="{{ '/assets/images/khyam-allami.png' | relative_url }}" alt="Khyam Allami" class="team-photo">
+    <h3>Khyam Allami</h3>
+    <p class="team-role">Former Postdoctoral Fellow: Arabic Maqam Archive, Maqam Networks</p>
+    <div class="team-website">
+      <a href="https://khyamallami.com" target="_blank">khyamallami.com</a>
+    </div>
+  </div>
 
   <div class="team-member">
     <img src="{{ '/assets/images/mohammad-el-asal.png' | relative_url }}" alt="Mohammad El Asal" class="team-photo">
@@ -95,6 +79,22 @@ The Music Intelligence Lab is a small group of researchers, students, and collab
 ## Collaborators
 
 <div class="team-grid">
+
+  <div class="team-member">
+    <div class="team-photo-placeholder" aria-hidden="true">EM</div>
+    <h3>Elsa Maalouf</h3>
+    <p class="team-role">Co-PI, Music in Motion: Dance and Movement</p>
+    <div class="team-website">
+      <a href="https://www.aub.edu.lb/msfea/departments/che/Pages/default.aspx" target="_blank">AUB Chemical Engineering</a>
+    </div>
+  </div>
+
+  <div class="team-member">
+    <div class="team-photo-placeholder" aria-hidden="true">OC</div>
+    <h3>Olivier Chiniara</h3>
+    <p class="team-role">Co-grantee, Music in Motion: Biomechanics and Movement</p>
+    <div class="team-website"></div>
+  </div>
 
   <div class="team-member">
     <img src="{{ '/assets/images/dany-abou-jaoude.jpg' | relative_url }}" alt="Dany Abou Jaoude" class="team-photo">
