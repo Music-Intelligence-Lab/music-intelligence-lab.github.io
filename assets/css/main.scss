@@ -167,7 +167,7 @@ main.page-content { padding: 48px 0 32px; }
   font-size: 1.1rem;
   line-height: 1.65;
   color: $text-secondary;
-  max-width: 68ch;
+  max-width: none;
   margin: 0 0 16px;
 }
 
@@ -177,7 +177,7 @@ main.page-content { padding: 48px 0 32px; }
   font-size: 0.95rem;
   color: $text-muted;
   margin: 0;
-  max-width: 68ch;
+  max-width: none;
 }
 
 /* --- Section titles -------------------------------------- */
@@ -202,7 +202,7 @@ main.page-content { padding: 48px 0 32px; }
 /* --- What we do ------------------------------------------ */
 .what-we-do {
   p {
-    max-width: 68ch;
+    max-width: none;
     color: $text-secondary;
     margin: 0 0 18px;
   }
@@ -356,7 +356,7 @@ main.page-content { padding: 48px 0 32px; }
 /* --- Contact section ------------------------------------- */
 .contact p {
   color: $text-secondary;
-  max-width: 68ch;
+  max-width: none;
 }
 
 /* --- Team grid (used on /people/) ------------------------ */
