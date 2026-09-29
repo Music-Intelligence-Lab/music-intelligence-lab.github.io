@@ -55,6 +55,15 @@ list_title: false
   </article>
 
   <article class="project-card">
+    <div class="project-body">
+      <h3>Dance to Music</h3>
+      <p>A browser-based tool that turns dance into music with no wearable hardware. A live camera runs a MediaPipe pose model in real time, joint positions and their derivatives (velocities, accelerations, coordination features) are extracted, and a mapping layer routes them to sound. It runs entirely in the browser, so anyone with a webcam can play.</p>
+      <p>Where the Musical Flow Rope constrains the body through an object, Dance to Music takes the opposite path: the full moving body as the interface. It is developed as part of the Music in Motion project, with dancer Jana as the current lead performer.</p>
+      <p class="project-links"><a href="/dance2music/live/" target="_blank">Open the live tool</a></p>
+    </div>
+  </article>
+
+  <article class="project-card">
     <div class="project-media">
       <img src="{{ '/assets/images/gluvn.jpg' | relative_url }}" alt="Gluvn glove instrument">
     </div>
@@ -85,6 +94,14 @@ list_title: false
       <h3>Maqam Identification (MaqamNet, ISMIR)</h3>
       <p>MaqamNet is a musicologically interpretable deep-learning framework for Arabic maqām identification. The work was presented at ISMIR 2026 and builds a shared benchmark and analysis pipeline for maqām recognition across recordings from multiple traditions.</p>
       <p class="project-links"><a href="https://github.com/josephbakarji/maqamnet" target="_blank">Code and pitch data</a></p>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <div class="project-body">
+      <h3>Piano of Life</h3>
+      <p>A top-down piano video seeds a shaded Game of Life whose column density becomes a live spectral filter over the piano's own audio. What starts as a video of the hammers becomes a self-organising visualisation and a musical process at once. Vanilla JavaScript, Canvas 2D, and Web Audio; no dependencies. MIT licensed.</p>
+      <p class="project-links"><a href="https://www.josephbakarji.com/articles/?slug=piano-of-life" target="_blank">Article + live demo</a> &nbsp;·&nbsp; <a href="https://github.com/josephbakarji/piano-of-life" target="_blank">GitHub</a></p>
     </div>
   </article>
 

@@ -126,13 +126,7 @@ The Music Intelligence Lab is a small group of researchers, students, and collab
     <p class="team-role">Percussionist: Music in Motion</p>
   </div>
 
-  <div class="team-member">
-    <div class="team-photo-placeholder" aria-hidden="true">FB</div>
-    <h3>Fouad Bechwati (21db)</h3>
-    <p class="team-role">Acoustic Set Designer: Music in Motion Performances</p>
   </div>
-
-</div>
 
 ## Opportunities
 
