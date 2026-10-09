@@ -93,7 +93,7 @@ list_title: false
     <div class="project-body">
       <h3>Maqam Identification (MaqamNet, ISMIR)</h3>
       <p>MaqamNet is a musicologically interpretable deep-learning framework for Arabic maqām identification. The work was presented at ISMIR 2026 and builds a shared benchmark and analysis pipeline for maqām recognition across recordings from multiple traditions.</p>
-      <p class="project-links"><a href="https://github.com/josephbakarji/maqamnet" target="_blank">Code and pitch data</a></p>
+      <p class="project-links"><a href="https://learn.sematlas.com/static/talks/ismir2026-maqamnet/index.html" target="_blank">Interactive slides (ISMIR 2026)</a> &nbsp;·&nbsp; <a href="https://github.com/josephbakarji/maqamnet" target="_blank">Code and pitch data</a></p>
     </div>
   </article>
 
