@@ -20,13 +20,7 @@ list_title: false
 
 <section class="what-we-do">
   <h2 class="section-title"><span class="section-tag">// what we do</span></h2>
-  <p>We approach music as three interconnected forms of intelligence and try to keep them in conversation rather than choose between them.</p>
-  <ul class="triad">
-    <li><strong>Physical intelligence.</strong> The embodied side of music, from the muscle memory a musician builds over years to the coordination that turns a moving body into a rhythm section.</li>
-    <li><strong>Mathematical intelligence.</strong> The structure inside music: tunings, modes, harmonic relations, rhythms as patterns, and the geometry of how they connect.</li>
-    <li><strong>Computational intelligence.</strong> Signal analysis, representation learning, and generative models that let us describe and extend musical practice.</li>
-  </ul>
-  <p>Our goal is to build tools and instruments that empower musicians and dancers, in ways that stay personal, human, and rooted in specific cultural contexts.</p>
+  <p>We treat music as physical, mathematical, and computational intelligence at once: the coordination a musician's body learns over years, the structure inside tunings, modes, and rhythmic cycles, and the models that can describe and extend musical practice. Most of our projects start from a body moving and end with a sound, and we build the instruments, sensors, and models in between. The aim is tools for musicians and dancers that stay personal, human, and rooted in specific cultural contexts.</p>
 </section>
 
 <section class="projects">
@@ -46,6 +40,9 @@ list_title: false
   </article>
 
   <article class="project-card">
+    <div class="project-media project-media--video">
+      <iframe src="https://www.youtube-nocookie.com/embed/UIkylBomf_M" title="The Musical Flow Rope" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="project-body">
       <h3>Rope Flow Music</h3>
       <p>A weighted "flow" rope is instrumented with an inertial sensor at the handle and streams motion over Bluetooth into a live pipeline. Movement is classified into a small learned vocabulary of cycles, and each cycle is mapped to musical output through a DAW.</p>
@@ -64,8 +61,8 @@ list_title: false
   </article>
 
   <article class="project-card">
-    <div class="project-media">
-      <img src="{{ '/assets/images/gluvn.jpg' | relative_url }}" alt="Gluvn glove instrument">
+<div class="project-media project-media--video">
+      <iframe src="https://www.youtube-nocookie.com/embed/rFsVS_Wkfo0" title="Gluvn demo reel" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="project-body">
       <h3>Gluvn: a musical glove</h3>
@@ -98,10 +95,13 @@ list_title: false
   </article>
 
   <article class="project-card">
+    <div class="project-media">
+      <img src="{{ '/assets/images/piano-of-life.jpeg' | relative_url }}" alt="Piano hammers seeding a Game of Life">
+    </div>
     <div class="project-body">
       <h3>Piano of Life</h3>
       <p>A top-down piano video seeds a shaded Game of Life whose column density becomes a live spectral filter over the piano's own audio. What starts as a video of the hammers becomes a self-organising visualisation and a musical process at once. Vanilla JavaScript, Canvas 2D, and Web Audio; no dependencies. MIT licensed.</p>
-      <p class="project-links"><a href="https://www.josephbakarji.com/articles/?slug=piano-of-life" target="_blank">Article + live demo</a> &nbsp;·&nbsp; <a href="https://github.com/josephbakarji/piano-of-life" target="_blank">GitHub</a></p>
+      <p class="project-links"><a href="https://www.josephbakarji.com/music/" target="_blank">Play it</a> &nbsp;·&nbsp; <a href="https://www.josephbakarji.com/articles/?slug=piano-of-life" target="_blank">How it works</a> &nbsp;·&nbsp; <a href="https://github.com/josephbakarji/piano-of-life" target="_blank">GitHub</a></p>
     </div>
   </article>
 
