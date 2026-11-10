@@ -1,0 +1,24 @@
+{% assign w = include.w %}
+<article class="work{% if w.media %} work--media{% endif %}" id="{{ w.id }}">
+  {% if w.youtube %}
+  <a class="poster" href="https://www.youtube.com/watch?v={{ w.youtube }}" data-yt="{{ w.youtube }}" data-title="{{ w.title | escape }}">
+    <img src="{{ w.media | relative_url }}" alt="{{ w.alt | escape }}" loading="lazy" width="1600" height="900">
+    <span class="poster-play">Play video</span>
+  </a>
+  {% elsif w.svg %}
+  <figure class="plot">{% include {{ w.svg }} %}</figure>
+  {% elsif w.media %}
+  <img class="work-img" src="{{ w.media | relative_url }}" alt="{{ w.alt | escape }}" loading="lazy">
+  {% endif %}
+  <div class="work-text">
+    <h3>{{ w.title | smartify }}</h3>
+    {% if w.people %}<p class="byline">{{ w.people | smartify }}</p>{% endif %}
+    {{ w.body | markdownify }}
+    {% if w.note %}<p class="note">{{ w.note | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+    {% if w.links %}
+    <ul class="links">
+      {% for l in w.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</article>

@@ -1,35 +1,20 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-thanks">
+      {{ site.data.home.thanks | markdownify }}
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
     </div>
-
+    <div class="foot-credit">
+      <h2>Music in Motion</h2>
+      <div class="foot-logos">
+        <span class="foot-eu">
+          <img src="{{ '/assets/images/logos/eu-flag.svg' | relative_url }}" alt="Flag of the European Union">
+          <span>Co-funded by<br>the European Union</span>
+        </span>
+        <img class="foot-afac" src="{{ '/assets/images/logos/afac.png' | relative_url }}" alt="Arab Fund for Arts and Culture">
+      </div>
+      <p>This Project is implemented with the support of the Arab Fund for Arts and Culture – AFAC, in partnership with Oxfam, Echos Electrik, and Megaphone and co-funded by the European Union.</p>
+      <p class="fine">This document has been produced with the financial assistance of the European Union. The contents of this document are the sole responsibility of Music Intelligence Lab, American University of Beirut &amp; Olivier Chiniara, and can under no circumstances be regarded as reflecting the position of the European Union.</p>
+    </div>
   </div>
-
 </footer>

@@ -1,0 +1,135 @@
+# Research areas and the projects under each.
+# projects: rows with a picture or video. small: text-only entries.
+# Add a project by copying a block. Only title and body are required.
+
+- id: instruments
+  title: Instruments and movement
+  intro: |
+    Playing an instrument depends on physical intelligence: much of what a musician knows is held in the body rather than in explicit rules. In this area we design instruments that translate movement into sound, and study what makes such an instrument learnable and expressive.
+  projects:
+    - id: rope
+      title: Rope Flow Music
+      people: Joseph Bakarji, Olivier Chiniara, Samir Shaker
+      youtube: UIkylBomf_M
+      media: /assets/images/rope-poster.jpg
+      alt: A performer on a terrace above the hills, swinging a long loop of rope.
+      body: |
+        A weighted flow rope with motion sensors at the handles. The sensor data stream into a live pipeline that classifies the rope's movement into a small vocabulary of cycles and maps each cycle to musical output through a digital audio workstation. Because the rope constrains the body to a limited set of movements, it is a tractable first case for learning mappings from motion to sound. The project began in collaboration with Olivier Chiniara, a biomechanics and movement specialist.
+      note: Accepted to the NeurIPS 2026 Creative AI track.
+      links:
+        - label: Project page
+          url: https://www.josephbakarji.com/projects/#proj-musical-flow-rope
+    - id: glove
+      title: Gluvn, a glove instrument
+      people: Hélène Jabbour, Joseph Bakarji
+      youtube: rFsVS_Wkfo0
+      media: /assets/images/glove-poster.jpg
+      alt: Joseph Bakarji in front of a bookshelf, wearing two black sensor gloves.
+      body: |
+        A wearable glove with a flex sensor on each finger, pressure sensors at the fingertips, and an inertial sensor on the palm, in development since 2014. The main open problem is mapping. The glove produces a high-dimensional continuous signal and gives no haptic feedback, so the choice of how to map it to sound largely determines whether it can be played. Earlier work learned this mapping from piano performance. Hélène Jabbour is now developing a wireless, performance-ready version.
+      links:
+        - label: Project write-up
+          url: https://www.josephbakarji.com/articles/?slug=gluvn
+        - label: Preprint (arXiv:2001.09551)
+          url: https://arxiv.org/abs/2001.09551
+    - id: music-in-motion
+      title: Music in Motion
+      people: Joseph Bakarji, Elsa Maalouf, Olivier Chiniara, Samir Shaker
+      body: |
+        A two-year project, 2026 to 2028, led with Elsa Maalouf and Olivier Chiniara. It extends the rope work to free full-body movement, including dance, using wearable sensors, video pose estimation, and models that learn correspondences between movement and sound. The project will include public performances and an open-source release.
+
+        Two browser prototypes are already available. The first maps body pose from a webcam to sound and needs no sensors. The second, the Movement Dictionary, turns a dancer's written notes on verticality, spine, head and circles into short studies that can be played.
+      links:
+        - label: Pose-to-sound prototype
+          url: /dance2music/live/
+        - label: The Movement Dictionary
+          url: /dance2music/experiments/movement-dictionary/
+        - label: Announcement
+          url: https://www.josephbakarji.com/articles/?slug=music-in-motion
+  small:
+    - id: marimba
+      title: Continuous marimba
+      people: Nareg Karaoghlanian, Khaled Yassine, Joseph Bakarji
+      body: |
+        A wooden surface fitted with piezoelectric sensors. The position of a strike is estimated from the difference in arrival time at the sensors and mapped to a continuous pitch, which makes microtonal playing possible. The project started with percussionist Khaled Yassine and is being continued by Nareg Karaoghlanian.
+    - id: egg
+      title: Learning an instrument from motion
+      people: Joseph Bakarji
+      body: |
+        An egg shaker attached to a phone. The phone's accelerometer records the motion and its microphone records the resulting sound. The goal is a small real-time model that predicts the sound from the motion, as a minimal case of learning an internal model of an instrument.
+
+- id: structure
+  title: Musical structure
+  intro: |
+    Music is organized by ratios, scales and modes, and the choice of tuning system changes how it sounds. Much of the theory of Arabic music is recorded in historical treatises and has received little computational study. In this area we model musical structure, from tuning systems and maqam theory to representations learned from recordings and scores.
+  projects:
+    - id: archive
+      title: Digital Arabic Maqam Archive (DiArMaqAr)
+      people: Khyam Allami, Ibrahim Elkhansa, Mohammad El Asal, Joseph Bakarji
+      media: /assets/images/maqamarchive.png
+      alt: The DiArMaqAr interface, showing a grid of maqamat and the notes of one of them on a staff.
+      body: |
+        An open-source, open-access web platform for Arabic maqam theory, developed by Khyam Allami with the lab. It brings together tuning systems (tanāghīm), tetrachords (ajnās) and modes (maqāmāt) from historical treatises and performance practice in a single interactive environment, where they can be compared and heard. The archive was launched at AUB in July 2026.
+      note: Described in a paper at ISMIR 2026.
+      links:
+        - label: Open the archive
+          url: https://diarmaqar.netlify.app/
+        - label: Code
+          url: https://github.com/Music-Intelligence-Lab/DiArMaqAr
+    - id: bach
+      title: Latent geometry of Bach's preludes and fugues
+      people: Najla Sadek, Joseph Bakarji
+      svg: bach-circle.svg
+      media: true
+      body: |
+        We trained an autoencoder on piano-roll encodings of Bach's preludes and fugues, without key labels. When the learned representations are averaged by key and projected to two dimensions, the keys are ordered along the circle of fifths, as shown in the figure.
+      note: EAIM 2026 workshop.
+      links:
+        - label: Paper
+          url: https://openreview.net/forum?id=HXm5wUgRib
+  small:
+    - id: maqamnet
+      title: MaqamNet
+      people: Joseph Bakarji, Khyam Allami, Mohammad El Asal, Dany Abou Jaoude
+      body: |
+        A deep learning framework for identifying Arabic maqamat from audio. We show that tonic estimation is the main source of error: when the tonic is known, standard classifiers reach 91 to 94 percent accuracy, and each 25 cents of tonic error costs about 8 percentage points. MaqamNet avoids explicit tonic estimation by cross-correlating pitch histograms with maqam and jins templates from DiArMaqAr, and its learned representations can be interpreted in terms of maqam theory.
+      note: ISMIR 2026.
+      links:
+        - label: Slides
+          url: https://learn.sematlas.com/static/talks/ismir2026-maqamnet/index.html
+        - label: Code and pitch data
+          url: https://github.com/Music-Intelligence-Lab/maqamnet
+
+- id: machine
+  title: Machine learning and generation
+  intro: |
+    Generative models learn from music made by people. We are interested in systems in which musicians and models perform together, which in turn requires interfaces better suited to performance than a keyboard and a screen.
+  projects:
+    - id: piano-of-life
+      title: Piano of Life
+      people: Joseph Bakarji
+      media: /assets/images/piano-of-life.jpeg
+      alt: Piano hammers seen from above, with a Game of Life growing beneath them.
+      body: |
+        A browser piece in which a top-down video of piano hammers seeds a Game of Life, whose column density acts as a live spectral filter on the piano's audio. It is written in plain JavaScript with Canvas 2D and Web Audio, works with any top-down piano video, and is MIT licensed.
+      links:
+        - label: Play it
+          url: https://www.josephbakarji.com/music/
+        - label: How it works
+          url: https://www.josephbakarji.com/articles/?slug=piano-of-life
+        - label: Code
+          url: https://github.com/josephbakarji/piano-of-life
+  small:
+    - id: aria
+      title: Aria in Ableton
+      people: Anthony Haber, Joseph Bakarji
+      body: |
+        An integration of Aria, an open generative piano model, into Ableton Live, developed by Anthony Haber. The model continues a phrase played by the performer, and its output can be recorded and looped during a live performance.
+      links:
+        - label: Code
+          url: https://github.com/Music-Intelligence-Lab/Aria-Bridge
+    - id: arabic-ai
+      title: Generative models for maqam
+      people: Joseph Bakarji, with students in the Vertically Integrated Projects program
+      body: |
+        Most music generation models assume twelve-tone equal temperament. We are studying how symbolic and audio models can be adapted to microtonal tuning, maqam-based melody and the rhythmic cycles of the region. Students are currently transcribing scanned books of notation to build training data.

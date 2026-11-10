@@ -1,0 +1,27 @@
+# Everything on the home page that isn't a project. Edit freely.
+# Style: no em-dashes, no arrows.
+
+lede: >-
+  We are a research group at the American University of Beirut. We design new
+  musical instruments, study the structure of music, with a focus on Arabic
+  maqam, and develop machine learning models for music analysis and generation.
+
+meta: >-
+  Led by [Joseph Bakarji](https://www.josephbakarji.com). Part of the
+  [Maroun Semaan Faculty of Engineering and Architecture](https://www.aub.edu.lb/msfea/Pages/default.aspx)
+  and the [School of Computing and Data Sciences](https://scds.aub.edu.lb/).
+
+projects_intro: |
+  We think of music as drawing on three kinds of intelligence: the physical intelligence a performer builds up through practice, the mathematical structure of scales, tunings and modes, and what machines can learn from musical data. Our projects are grouped accordingly, although most of them involve more than one.
+
+join_title: Joining the lab
+
+join: |
+  AUB undergraduates from any year can join through the [Vertically Integrated Projects program](https://www.josephbakarji.com/articles/vertically-integrated-program), where work in the lab counts toward course credit. Students work in small teams on one of the projects above, and the work touches electronics, mechatronics, acoustics, signal processing and machine learning.
+
+  We welcome MS and PhD applicants interested in machine learning for music, musical interfaces, or the music of the region. Musicians and dancers who would like to try the instruments and help shape them are also welcome.
+
+  For enquiries, write to Joseph Bakarji at [jb50@aub.edu.lb](mailto:jb50@aub.edu.lb).
+
+thanks: |
+  The lab is supported by the [Center for Advanced Mathematical Sciences](https://cams.aub.edu.lb) at AUB, and we thank Jihad Touma for supporting it since its founding. We also acknowledge support from the AUB Artificial Intelligence, Data Science, and Computing Hub, the University Research Board, and the AUB Science meets Arts fund.

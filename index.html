@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<header class="wall">
+  {% include nav.html %}
+  <div class="wrap wall-copy">
+    <h1>{{ site.title }}</h1>
+    <p class="lede">{{ site.data.home.lede | smartify }}</p>
+    <div class="meta">{{ site.data.home.meta | markdownify }}</div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="intro" id="projects">
+    <div class="wrap intro-grid">
+      <h2>Projects</h2>
+      <div class="intro-body">{{ site.data.home.projects_intro | markdownify }}</div>
+    </div>
+  </section>
+
+  {% for s in site.data.strands %}
+  <section class="strand" id="{{ s.id }}">
+    <div class="wrap">
+      <header class="strand-head">
+        <h2>{{ s.title | smartify }}</h2>
+        <div class="strand-intro">{{ s.intro | markdownify }}</div>
+      </header>
+      {% for w in s.projects %}{% include work.html w=w %}{% endfor %}
+      {% if s.small %}
+      <div class="small-work">
+        {% for w in s.small %}{% include work.html w=w %}{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <section class="join" id="join">
+    <div class="wrap join-grid">
+      <h2>{{ site.data.home.join_title }}</h2>
+      <div class="join-body">{{ site.data.home.join | markdownify }}</div>
+    </div>
+  </section>
+</main>

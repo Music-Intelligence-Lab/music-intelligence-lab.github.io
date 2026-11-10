@@ -1,0 +1,33 @@
+---
+layout: default
+title: People
+permalink: /people/
+body_class: page-people
+---
+<header class="wall wall--short">
+  {% include nav.html %}
+  <div class="wrap people-head">
+    <h1>People</h1>
+    <div class="lede">{{ site.data.people.intro | markdownify }}</div>
+  </div>
+</header>
+<main id="main">
+  {% for g in site.data.people.groups %}
+  <section class="group">
+    <div class="wrap group-grid">
+      <h2>{{ g.title | smartify }}</h2>
+      <ul class="roster">
+        {% for p in g.people %}
+        <li{% if p.photo %} class="has-photo"{% endif %}>
+          {% if p.photo %}<img src="{{ p.photo | relative_url }}" alt="" loading="lazy">{% endif %}
+          <div>
+            <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+            <p>{{ p.what | smartify }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endfor %}
+</main>

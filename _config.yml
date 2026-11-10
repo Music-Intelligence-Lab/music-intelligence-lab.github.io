@@ -1,27 +1,29 @@
-# Site settings
 title: Music Intelligence Lab
 email: jb50@aub.edu.lb
 description: >-
-  Music, technology, and intelligence at the American University of Beirut.
-  New instruments, machine learning for music, and computational musicology of
-  the Arab region.
+  A research group at the American University of Beirut working on musical
+  instruments, the structure of music, and machine learning for music.
 baseurl: ""
 url: "https://musicintelligencelab.com"
+lang: en
+defaults:
+  - scope: { path: "" }
+    values: { image: /assets/images/og.jpg }
 
-# Build settings
 markdown: kramdown
-theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
 
-# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - deploy.sh
+  - serve.sh
+  - setup.sh
   - node_modules
+  - scripts/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - scripts/

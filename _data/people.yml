@@ -1,0 +1,56 @@
+# People page. Add yourself by copying a block. Only name and what are required.
+
+intro: >-
+  Current members, collaborators, and former members of the lab.
+  Prospective students can find details on [joining the lab](/#join).
+
+groups:
+  - title: Members
+    people:
+      - name: Joseph Bakarji
+        photo: /assets/images/joseph-bakarji.jpeg
+        url: https://www.josephbakarji.com
+        what: Principal investigator. Assistant Professor, Department of Mechanical Engineering and the Artificial Intelligence, Data Science and Computing Hub.
+      - name: Samir Shaker
+        what: Research assistant. Live performance pipeline and app development.
+      - name: Hélène Jabbour
+        what: MS student, Mechanical Engineering. Gluvn glove instrument.
+
+  - title: Collaborators
+    people:
+      - name: Elsa Maalouf
+        url: https://www.aub.edu.lb/msfea/departments/che/Pages/default.aspx
+        what: Co-PI, Music in Motion. Dance and movement. Department of Chemical Engineering, AUB.
+      - name: Olivier Chiniara
+        what: Co-grantee, Music in Motion. Biomechanics and movement.
+      - name: Joelle Khoury
+        what: Composer and pianist. Composition and performance.
+      - name: Khaled Yassine
+        what: Percussionist. Advisor on percussion and rhythm.
+      - name: Nareg Karaoghlanian
+        what: Research associate, AUB. Mechatronics, design, and the continuous marimba.
+      - name: Sara Najem
+        photo: /assets/images/sara-najem.jpeg
+        what: Department of Physics and CAMS, AUB. Network science for music.
+      - name: Dany Abou Jaoude
+        photo: /assets/images/dany-abou-jaoude.jpg
+        what: Department of Mechanical Engineering, AUB. Maqam identification.
+
+  - title: Alumni
+    people:
+      - name: Khyam Allami
+        photo: /assets/images/khyam-allami.png
+        url: https://khyamallami.com
+        what: Postdoctoral fellow. Digital Arabic Maqam Archive and maqam networks.
+      - name: Mohammad El Asal
+        photo: /assets/images/mohammad-el-asal.png
+        what: Research assistant. Maqam identification and the Shawwa algorithm.
+      - name: Najla Sadek
+        photo: /assets/images/najla-sadek.jpg
+        what: Undergraduate researcher. Latent geometry of Bach's Well-Tempered Clavier (EAIM 2026).
+      - name: Roni Trad
+        photo: /assets/images/roni-trad.jpg
+        what: MS, Computational Science.
+      - name: Rebal Abou Fadel
+        photo: /assets/images/rebal-abou-fadel.png
+        what: Undergraduate researcher.
