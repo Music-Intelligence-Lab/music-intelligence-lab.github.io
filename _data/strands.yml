@@ -7,18 +7,6 @@
   intro: |
     Playing an instrument depends on physical intelligence: much of what a musician knows is held in the body rather than in explicit rules. In this area we design instruments that translate movement into sound, and study what makes such an instrument learnable and expressive.
   projects:
-    - id: rope
-      title: Rope Flow Music
-      people: Joseph Bakarji, Olivier Chiniara, Samir Shaker
-      youtube: UIkylBomf_M
-      media: /assets/images/rope-poster.jpg
-      alt: A performer on a terrace above the hills, swinging a long loop of rope.
-      body: |
-        A weighted flow rope with motion sensors at the handles. The sensor data stream into a live pipeline that classifies the rope's movement into a small vocabulary of cycles and maps each cycle to musical output through a digital audio workstation. Because the rope constrains the body to a limited set of movements, it is a tractable first case for learning mappings from motion to sound. The project began in collaboration with Olivier Chiniara, a biomechanics and movement specialist.
-      note: Accepted to the NeurIPS 2026 Creative AI track.
-      links:
-        - label: Project page
-          url: https://www.josephbakarji.com/projects/#proj-musical-flow-rope
     - id: glove
       title: Gluvn, a glove instrument
       people: Hélène Jabbour, Joseph Bakarji
@@ -49,9 +37,9 @@
   small:
     - id: marimba
       title: Continuous marimba
-      people: Nareg Karaoghlanian, Khaled Yassine, Joseph Bakarji
+      people: Nareg Karaoghlanian, Joseph Bakarji
       body: |
-        A wooden surface fitted with piezoelectric sensors. The position of a strike is estimated from the difference in arrival time at the sensors and mapped to a continuous pitch, which makes microtonal playing possible. The project started with percussionist Khaled Yassine and is being continued by Nareg Karaoghlanian.
+        A wooden surface fitted with piezoelectric sensors. The position of a strike is estimated from the difference in arrival time at the sensors and mapped to a continuous pitch, which makes microtonal playing possible.
     - id: egg
       title: Learning an instrument from motion
       people: Joseph Bakarji
@@ -133,3 +121,16 @@
       people: Joseph Bakarji, with students in the Vertically Integrated Projects program
       body: |
         Most music generation models assume twelve-tone equal temperament. We are studying how symbolic and audio models can be adapted to microtonal tuning, maqam-based melody and the rhythmic cycles of the region. Students are currently transcribing scanned books of notation to build training data.
+  last:
+    - id: rope
+      title: Rope Flow Music
+      people: Joseph Bakarji, Olivier Chiniara, Samir Shaker
+      youtube: UIkylBomf_M
+      media: /assets/images/rope-poster.jpg
+      alt: A performer on a terrace above the hills, swinging a long loop of rope.
+      body: |
+        A weighted flow rope with motion sensors at the handles. The sensor data stream into a live pipeline that classifies the rope's movement into a small vocabulary of cycles and maps each cycle to musical output through a digital audio workstation. Because the rope constrains the body to a limited set of movements, it is a tractable first case for learning mappings from motion to sound. Olivier Chiniara, a biomechanics and movement specialist, started the project with us and shapes the movement vocabulary. Samir Shaker works on the sensors, the live pipeline and the phone app.
+      note: Accepted to the NeurIPS 2026 Creative AI track.
+      links:
+        - label: Project page
+          url: https://www.josephbakarji.com/projects/#proj-musical-flow-rope

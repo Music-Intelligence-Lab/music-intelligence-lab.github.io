@@ -139,6 +139,8 @@ a:hover { color: var(--rope-ink); text-decoration-thickness: 0.13em; }
   border-top: 2px solid var(--wall-mid);
 }
 .small-work .work { margin: 0; }
+.last-work { margin-top: clamp(40px, 6vh, 64px); padding-top: clamp(32px, 5vh, 56px); border-top: 2px solid var(--wall-mid); }
+.last-work .work--media { margin-bottom: 0; }
 .small-work .work h3 { font-size: 1.28em; }
 
 .poster { position: relative; display: block; aspect-ratio: 16 / 9; background: var(--denim); overflow: hidden; text-decoration: none; }
