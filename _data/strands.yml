@@ -14,7 +14,7 @@
       media: /assets/images/glove-poster.jpg
       alt: Joseph Bakarji in front of a bookshelf, wearing two black sensor gloves.
       body: |
-        A wearable glove with a flex sensor on each finger, pressure sensors at the fingertips, and an inertial sensor on the palm, in development since 2014. The main open problem is mapping. The glove produces a high-dimensional continuous signal and gives no haptic feedback, so the choice of how to map it to sound largely determines whether it can be played. Earlier work learned this mapping from piano performance. Hélène Jabbour is now developing a wireless, performance-ready version.
+        A wearable glove with a flex sensor on each finger, pressure sensors at the fingertips, and an inertial sensor on the palm, in development since 2014. The main open problem is mapping. The glove produces a high-dimensional continuous signal and gives no haptic feedback, so the choice of how to map it to sound largely determines whether it can be played. Earlier work learned this mapping from piano performance. A wireless, performance-ready version is in development.
       links:
         - label: Project write-up
           url: https://www.josephbakarji.com/articles/?slug=gluvn
@@ -22,7 +22,7 @@
           url: https://arxiv.org/abs/2001.09551
     - id: music-in-motion
       title: Music in Motion
-      people: Joseph Bakarji, Elsa Maalouf, Olivier Chiniara, Samir Shaker
+      people: Joseph Bakarji, Elsa Maalouf, Olivier Chiniara, Samir Shaker, Jana Younes, Joelle Khoury
       body: |
         A two-year project, 2026 to 2028, led with Elsa Maalouf and Olivier Chiniara. It extends the rope work to free full-body movement, including dance, using wearable sensors, video pose estimation, and models that learn correspondences between movement and sound. The project will include public performances and an open-source release.
 
@@ -34,17 +34,6 @@
           url: /dance2music/experiments/movement-dictionary/
         - label: Announcement
           url: https://www.josephbakarji.com/articles/?slug=music-in-motion
-  small:
-    - id: marimba
-      title: Continuous marimba
-      people: Nareg Karaoghlanian, Joseph Bakarji
-      body: |
-        A wooden surface fitted with piezoelectric sensors. The position of a strike is estimated from the difference in arrival time at the sensors and mapped to a continuous pitch, which makes microtonal playing possible.
-    - id: egg
-      title: Learning an instrument from motion
-      people: Joseph Bakarji
-      body: |
-        An egg shaker attached to a phone. The phone's accelerometer records the motion and its microphone records the resulting sound. The goal is a small real-time model that predicts the sound from the motion, as a minimal case of learning an internal model of an instrument.
 
 - id: structure
   title: Musical structure
@@ -53,7 +42,7 @@
   projects:
     - id: archive
       title: Digital Arabic Maqam Archive (DiArMaqAr)
-      people: Khyam Allami, Ibrahim Elkhansa, Mohammad El Asal, Joseph Bakarji
+      people: Khyam Allami, Ibrahim El Khansa, Mohammad El Asal, Joseph Bakarji
       media: /assets/images/maqamarchive.png
       alt: The DiArMaqAr interface, showing a grid of maqamat and the notes of one of them on a staff.
       body: |
@@ -112,15 +101,10 @@
       title: Aria in Ableton
       people: Anthony Haber, Joseph Bakarji
       body: |
-        An integration of Aria, an open generative piano model, into Ableton Live, developed by Anthony Haber. The model continues a phrase played by the performer, and its output can be recorded and looped during a live performance.
+        An integration of Aria, an open generative piano model, into Ableton Live. The model continues a phrase played by the performer, and its output can be recorded and looped during a live performance.
       links:
         - label: Code
           url: https://github.com/Music-Intelligence-Lab/Aria-Bridge
-    - id: arabic-ai
-      title: Generative models for maqam
-      people: Joseph Bakarji, with students in the Vertically Integrated Projects program
-      body: |
-        Most music generation models assume twelve-tone equal temperament. We are studying how symbolic and audio models can be adapted to microtonal tuning, maqam-based melody and the rhythmic cycles of the region. Students are currently transcribing scanned books of notation to build training data.
   last:
     - id: rope
       title: Rope Flow Music

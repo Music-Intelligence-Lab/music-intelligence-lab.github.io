@@ -1,8 +1,10 @@
 # People page. Add yourself by copying a block. Only name and what are required.
+# Groups with compact: true show no photos and sit in two columns.
 
 intro: >-
-  Current members, collaborators, and former members of the lab.
-  Prospective students can find details on [joining the lab](/#join).
+  Current members, collaborators, undergraduate researchers, and former
+  members of the lab. Prospective students can find details on
+  [joining the lab](/#join).
 
 groups:
   - title: Members
@@ -23,16 +25,57 @@ groups:
         what: Co-PI, Music in Motion. Dance and movement. Department of Chemical Engineering, AUB.
       - name: Olivier Chiniara
         what: Co-grantee, Music in Motion. Biomechanics and movement.
+      - name: Jana Younes
+        what: Dancer and choreographer. Music in Motion.
       - name: Joelle Khoury
         what: Composer and pianist. Composition and performance.
       - name: Nareg Karaoghlanian
-        what: Research associate, AUB. Mechatronics, design, and the continuous marimba.
+        what: Research associate, AUB. Mechatronics and design.
       - name: Sara Najem
         photo: /assets/images/sara-najem.jpeg
         what: Department of Physics and CAMS, AUB. Network science for music.
       - name: Dany Abou Jaoude
         photo: /assets/images/dany-abou-jaoude.jpg
         what: Department of Mechanical Engineering, AUB. Maqam identification.
+
+  - title: Undergraduate researchers
+    note: Current and former undergraduates, most of them through the Vertically Integrated Projects program (VIPP). Completed projects are listed first.
+    compact: true
+    people:
+      # completed projects
+      - name: Najla Sadek
+        what: Latent geometry of Bach's preludes and fugues. Paper at the EAIM 2026 workshop.
+      - name: Ibrahim El Khansa
+        what: Digital Arabic Maqam Archive. Co-author of the ISMIR 2026 paper.
+      - name: Georges Nader
+        what: Rewrote the Digital Arabic Maqam Archive codebase as a documented Python API for data analysis. VIPP, Fall 2025 and Spring 2026.
+      - name: Anthony Haber
+        what: Adapted Aria, a generative piano model, to Ableton Live, with a system for rating its outputs. VIPP, Spring and Fall 2026.
+      - name: Rebal Abou Fadel
+        what: Undergraduate researcher.
+      # ongoing and exploratory work
+      - name: Yorgo Azzi
+        what: Generative composition with music theory, genetic algorithms and rule-based systems, now driven by movement. VIPP, Spring and Fall 2026.
+      - name: Charbel El Haddad
+        what: Diffusion models for maqam identification. Now leads the maqam team and is collecting data. VIPP, Fall 2025 to Fall 2026.
+      - name: Sarmad Osman
+        what: Maqam identification, then algorithmic composition with a focus on jazz. VIPP, Fall 2025 and Spring 2026.
+      - name: Yasmina Hanna
+        what: Maqam identification from audio with LSTM networks. VIPP, Spring 2026.
+      - name: Ali Sobh
+        what: Latent-space visualization of oud recordings and maqam classification with LSTMs and autoencoders. VIPP, Fall 2025.
+      - name: Rabih Abdel Khalek
+        what: Magenta RealTime, a live music generation model, driven by movement in video. VIPP, Fall 2026.
+      - name: Loubna Chamas
+        what: Wearable motion-sensor hardware. VIPP, Fall 2026.
+      - name: Fatima Karnib
+        what: Clustering and classification of movement recordings. VIPP, Fall 2026.
+      - name: Marwa Mansour
+        what: Transcription of Arabic music notation into a dataset. VIPP, Fall 2026.
+      - name: Charbel Manih
+        what: Transcription of Arabic music notation into a dataset. VIPP, Fall 2026.
+      - name: Yara Sleem
+        what: Visualization of the Digital Arabic Maqam Archive. VIPP, Fall 2026.
 
   - title: Alumni
     people:
@@ -43,12 +86,3 @@ groups:
       - name: Mohammad El Asal
         photo: /assets/images/mohammad-el-asal.png
         what: Research assistant. Maqam identification and the Shawwa algorithm.
-      - name: Najla Sadek
-        photo: /assets/images/najla-sadek.jpg
-        what: Undergraduate researcher. Latent geometry of Bach's Well-Tempered Clavier (EAIM 2026).
-      - name: Roni Trad
-        photo: /assets/images/roni-trad.jpg
-        what: MS, Computational Science.
-      - name: Rebal Abou Fadel
-        photo: /assets/images/rebal-abou-fadel.png
-        what: Undergraduate researcher.

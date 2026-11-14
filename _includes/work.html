@@ -12,9 +12,8 @@
   {% endif %}
   <div class="work-text">
     <h3>{{ w.title | smartify }}</h3>
-    {% if w.people %}<p class="byline">{{ w.people | smartify }}</p>{% endif %}
     {{ w.body | markdownify }}
-    {% if w.note %}<p class="note">{{ w.note | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+    {% if w.people or w.note %}<p class="credit">{% if w.people %}{{ w.people | smartify }}.{% endif %}{% if w.note %} {{ w.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}</p>{% endif %}
     {% if w.links %}
     <ul class="links">
       {% for l in w.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
