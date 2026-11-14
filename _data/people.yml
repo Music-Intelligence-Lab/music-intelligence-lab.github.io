@@ -76,6 +76,8 @@ groups:
         what: Transcription of Arabic music notation into a dataset. VIPP, Fall 2026.
       - name: Yara Sleem
         what: Visualization of the Digital Arabic Maqam Archive. VIPP, Fall 2026.
+      - name: Anthony Khalil
+        what: Hardware design and 3D printing for the glove instrument. VIPP, Fall 2026.
 
   - title: Alumni
     people:
