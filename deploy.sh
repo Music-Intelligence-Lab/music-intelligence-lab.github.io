@@ -38,5 +38,5 @@ git push origin main
 
 echo ""
 echo "Deployment complete!"
-echo "Your site will be available at: https://music-intelligence-lab.github.io/website/"
+echo "Live in about a minute at: https://musicintelligencelab.com"
 echo "Note: It may take a few minutes for changes to appear."

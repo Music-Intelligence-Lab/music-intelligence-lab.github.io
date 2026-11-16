@@ -1,8 +1,8 @@
 <footer class="foot">
   <div class="wrap foot-grid">
     <div class="foot-thanks">
-      {{ site.data.home.thanks | markdownify }}
-      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <div{% include e.html b="home:thanks" %}>{{ site.data.home.thanks | markdownify }}</div>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br><a href="https://github.com/Music-Intelligence-Lab">github.com/Music-Intelligence-Lab</a></p>
     </div>
     <div class="foot-credit">
       <h2>Music in Motion</h2>

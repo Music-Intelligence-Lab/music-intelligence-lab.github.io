@@ -1,23 +1,39 @@
-{% assign w = include.w %}
-<article class="work{% if w.media %} work--media{% endif %}" id="{{ w.id }}">
-  {% if w.youtube %}
-  <a class="poster" href="https://www.youtube.com/watch?v={{ w.youtube }}" data-yt="{{ w.youtube }}" data-title="{{ w.title | escape }}">
-    <img src="{{ w.media | relative_url }}" alt="{{ w.alt | escape }}" loading="lazy" width="1600" height="900">
-    <span class="poster-play">Play video</span>
-  </a>
-  {% elsif w.svg %}
-  <figure class="plot">{% include {{ w.svg }} %}</figure>
-  {% elsif w.media %}
-  <img class="work-img" src="{{ w.media | relative_url }}" alt="{{ w.alt | escape }}" loading="lazy">
-  {% endif %}
+{% assign w = include.w %}{% assign wp = include.path %}{% assign visual = false %}{% if w.media or w.widget or w.youtube or w.video or w.svg %}{% assign visual = true %}{% endif %}
+<article class="work{% if visual %} work--media{% else %} work--wide{% endif %}" id="{{ w.id }}">
   <div class="work-text">
-    <h3>{{ w.title | smartify }}</h3>
-    {{ w.body | markdownify }}
-    {% if w.people or w.note %}<p class="credit">{% if w.people %}{{ w.people | smartify }}.{% endif %}{% if w.note %} {{ w.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}</p>{% endif %}
+    <h3{% include e.html b=wp k="title" %}>{{ w.title | smartify }}</h3>
+    <div class="work-body"{% include e.html b=wp k="body" %}>{{ w.body | markdownify }}</div>
+    {% if w.people or w.note %}<p class="credit"{% include e.html b=wp f="people,note" %}>{% if w.people %}<span class="credit-label">Contributors:</span> {{ w.people | smartify }}.{% endif %}{% if w.note %} {{ w.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}</p>{% elsif site.edit_mode %}<p class="credit edit-empty"{% include e.html b=wp f="people,note" %}>Add contributors</p>{% endif %}
     {% if w.links %}
     <ul class="links">
-      {% for l in w.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+      {% for l in w.links %}{% capture lk %}links/{{ forloop.index0 }}{% endcapture %}<li><a href="{{ l.url }}"{% include e.html b=wp k=lk f="label,url" %}>{{ l.label }}</a></li>{% endfor %}
     </ul>
     {% endif %}
   </div>
+  {% if visual %}
+  <div class="work-visual">
+    {% if w.youtube %}
+    <a class="poster" href="https://www.youtube.com/watch?v={{ w.youtube }}" data-yt="{{ w.youtube }}" data-title="{{ w.title | escape }}">
+      <img src="{{ w.media | relative_url }}" alt="{{ w.alt | escape }}" loading="lazy" width="1600" height="900">
+      <span class="poster-play">Play video</span>
+    </a>
+    {% elsif w.video %}
+    <video class="work-video" controls playsinline preload="none" poster="{{ w.media | relative_url }}" aria-label="{{ w.alt | escape }}">
+      <source src="{{ w.video | relative_url }}" type="video/mp4">
+    </video>
+    {% elsif w.widget %}
+    <figure class="widget widget--{{ w.widget }}" data-widget="{{ w.widget }}" data-src="{{ '/assets/data/' | append: w.widget | append: '.json' | relative_url }}"{% if w.media %} data-poster="{{ w.media | relative_url }}"{% endif %}{% if w.widget == 'pol' %} data-script="{{ '/assets/js/piano-of-life.js' | relative_url }}"{% endif %}>
+      <div class="widget-stage">{% if w.svg %}<div class="plot">{% include {{ w.svg }} %}</div>{% elsif w.media %}<img class="work-img" src="{{ w.media | relative_url }}" alt="{{ w.alt | escape }}" loading="lazy">{% endif %}</div>
+      {% if w.caption %}<figcaption{% include e.html b=wp k="caption" %}>{{ w.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
+    </figure>
+    {% elsif w.svg %}
+    <figure class="plot">{% include {{ w.svg }} %}</figure>
+    {% elsif w.media %}
+    <figure class="work-figure">
+      <img class="work-img" src="{{ w.media | relative_url }}" alt="{{ w.alt | escape }}" loading="lazy">
+      {% if w.caption %}<figcaption{% include e.html b=wp k="caption" %}>{{ w.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+  </div>
+  {% endif %}
 </article>

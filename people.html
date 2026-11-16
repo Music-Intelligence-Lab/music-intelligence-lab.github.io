@@ -8,24 +8,24 @@ body_class: page-people
   {% include nav.html %}
   <div class="wrap people-head">
     <h1>People</h1>
-    <div class="lede">{{ site.data.people.intro | markdownify }}</div>
+    <div class="lede"{% include e.html b="people:intro" %}>{{ site.data.people.intro | markdownify }}</div>
   </div>
 </header>
 <main id="main">
-  {% for g in site.data.people.groups %}
-  <section class="group">
+  {% for g in site.data.people.groups %}{% capture gp %}people:groups/{{ forloop.index0 }}{% endcapture %}
+  <section class="group{% if g.compact %} group--wide{% endif %}">
     <div class="wrap group-grid">
       <div>
-        <h2>{{ g.title | smartify }}</h2>
-        {% if g.note %}<p class="group-note">{{ g.note | smartify }}</p>{% endif %}
+        <h2{% include e.html b=gp k="title" %}>{{ g.title | smartify }}</h2>
+        {% if g.note %}<p class="group-note"{% include e.html b=gp k="note" %}>{{ g.note | smartify }}</p>{% endif %}
       </div>
       <ul class="roster{% if g.compact %} roster--compact{% endif %}">
-        {% for p in g.people %}
+        {% for p in g.people %}{% capture pp %}{{ gp }}/people/{{ forloop.index0 }}{% endcapture %}
         <li{% if p.photo %} class="has-photo"{% endif %}>
           {% if p.photo %}<img src="{{ p.photo | relative_url }}" alt="" loading="lazy">{% endif %}
           <div>
-            <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
-            <p>{{ p.what | smartify }}</p>
+            <h3{% include e.html b=pp f="name,url" %}>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+            <p{% include e.html b=pp k="what" %}>{{ p.what | smartify }}</p>
           </div>
         </li>
         {% endfor %}

@@ -2,26 +2,20 @@
 # Style: no em-dashes, no arrows.
 
 lede: >-
-  We are a research group at the American University of Beirut. We design new
-  musical instruments, study the structure of music, with a focus on Arabic
-  maqam, and develop machine learning models for music analysis and generation.
+  We are a research lab at the American University of Beirut. We design new musical instruments, study the structure of music, with a focus on Arabic music, embodied real-time movement-to-sound instruments, machine learning models for music analysis, real-time algorithmic composition, and large generative models.
 
 meta: >-
-  Led by [Joseph Bakarji](https://www.josephbakarji.com). Part of the
-  [Maroun Semaan Faculty of Engineering and Architecture](https://www.aub.edu.lb/msfea/Pages/default.aspx)
-  and the [School of Computing and Data Sciences](https://scds.aub.edu.lb/).
-
+  Led by [Joseph Bakarji](https://www.josephbakarji.com). 
+projects_title: Why music intelligence?
 projects_intro: |
-  We think of music as drawing on three kinds of intelligence: the physical intelligence a performer builds up through practice, the mathematical structure of scales, tunings and modes, and what machines can learn from musical data. Our projects are grouped accordingly, although most of them involve more than one.
+  Music emerges from three kinds of intelligence. First, the oldest of the three: the physical intelligence a performer builds up through practice. Second, the mathematical structure of scales, tunings and modes, that have occupied mathematical minds like Al-Farabi and Pythagoras for thousands of years. And third, the latest addition, the artificial kind in which machines can learn from musical data, reshaping how music is created as we speak. Our projects below combine the three types of intelligence with the aim of creating new embodied and engaging musical experiences.
 
 join_title: Joining the lab
 
 join: |
   AUB undergraduates from any year can join through the [Vertically Integrated Projects program](https://www.josephbakarji.com/articles/vertically-integrated-program), where work in the lab counts toward course credit. Students work in small teams on one of the projects above, and the work touches electronics, mechatronics, acoustics, signal processing and machine learning.
 
-  We welcome MS and PhD applicants interested in machine learning for music, musical interfaces, or the music of the region. Musicians and dancers who would like to try the instruments and help shape them are also welcome.
-
-  For enquiries, write to Joseph Bakarji at [jb50@aub.edu.lb](mailto:jb50@aub.edu.lb).
+  Musicians and dancers who would like to try the instruments and help shape them are also welcome. For enquiries, write to Joseph Bakarji at [jb50@aub.edu.lb](mailto:jb50@aub.edu.lb).
 
 thanks: |
   The lab is supported by the [Center for Advanced Mathematical Sciences](https://cams.aub.edu.lb) (CAMS), the [Maroun Semaan Faculty of Engineering and Architecture](https://www.aub.edu.lb/msfea/Pages/default.aspx) (MSFEA), the Artificial Intelligence, Data Science, and Computing Hub, the University Research Board (URB), the [Vertically Integrated Projects program](https://www.josephbakarji.com/articles/vertically-integrated-program) (VIPP) and the Science Meets Arts fund, all at AUB, and by the Arab Fund for Arts and Culture (AFAC).

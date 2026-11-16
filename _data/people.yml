@@ -1,5 +1,5 @@
 # People page. Add yourself by copying a block. Only name and what are required.
-# Groups with compact: true show no photos and sit in two columns.
+# Groups with compact: true show no photos and run full width in three columns.
 
 intro: >-
   Current members, collaborators, undergraduate researchers, and former
@@ -20,6 +20,13 @@ groups:
 
   - title: Collaborators
     people:
+      - name: Dany Abou Jaoude
+        photo: /assets/images/dany-abou-jaoude.jpg
+        what: Department of Mechanical Engineering, AUB. Maqam identification.
+
+      - name: Sara Najem
+        photo: /assets/images/sara-najem.jpeg
+        what: Department of Physics and CAMS, AUB. Network science for music.
       - name: Elsa Maalouf
         url: https://www.aub.edu.lb/msfea/departments/che/Pages/default.aspx
         what: Co-PI, Music in Motion. Dance and movement. Department of Chemical Engineering, AUB.
@@ -31,13 +38,15 @@ groups:
         what: Composer and pianist. Composition and performance.
       - name: Nareg Karaoghlanian
         what: Research associate, AUB. Mechatronics and design.
-      - name: Sara Najem
-        photo: /assets/images/sara-najem.jpeg
-        what: Department of Physics and CAMS, AUB. Network science for music.
-      - name: Dany Abou Jaoude
-        photo: /assets/images/dany-abou-jaoude.jpg
-        what: Department of Mechanical Engineering, AUB. Maqam identification.
-
+  - title: Alumni
+    people:
+      - name: Khyam Allami
+        photo: /assets/images/khyam-allami.png
+        url: https://khyamallami.com
+        what: Postdoctoral fellow. Digital Arabic Maqam Archive and maqam networks.
+      - name: Mohammad El Asal
+        photo: /assets/images/mohammad-el-asal.png
+        what: Research assistant. Maqam identification and the Shawwa algorithm.
   - title: Undergraduate researchers
     note: Current and former undergraduates, most of them through the Vertically Integrated Projects program (VIPP). Completed projects are listed first.
     compact: true
@@ -52,7 +61,7 @@ groups:
       - name: Anthony Haber
         what: Adapted Aria, a generative piano model, to Ableton Live, with a system for rating its outputs. VIPP, Spring and Fall 2026.
       - name: Rebal Abou Fadel
-        what: Undergraduate researcher.
+        what: Electric instrument and live performance (video on the projects page).
       # ongoing and exploratory work
       - name: Yorgo Azzi
         what: Generative composition with music theory, genetic algorithms and rule-based systems, now driven by movement. VIPP, Spring and Fall 2026.
@@ -79,12 +88,3 @@ groups:
       - name: Anthony Khalil
         what: Hardware design and 3D printing for the glove instrument. VIPP, Fall 2026.
 
-  - title: Alumni
-    people:
-      - name: Khyam Allami
-        photo: /assets/images/khyam-allami.png
-        url: https://khyamallami.com
-        what: Postdoctoral fellow. Digital Arabic Maqam Archive and maqam networks.
-      - name: Mohammad El Asal
-        photo: /assets/images/mohammad-el-asal.png
-        what: Research assistant. Maqam identification and the Shawwa algorithm.
