@@ -64,7 +64,7 @@
         widget: maqam
         media: /assets/images/maqamarchive.png
         alt: The DiArMaqAr interface, showing a grid of maqamat and the notes of one of them on a staff.
-        caption: Choose a maqam and a tuning system, then play the scale or click a note. A maqam is built from ajnas, short groups of three to five notes, and the bracket marks its lowest jins, which usually gives the maqam its name. Step sizes in red fall between the semitones of a piano. The maqamat and tuning systems come from the [DiArMaqAr](https://diarmaqar.netlify.app/) platform.
+        caption: Choose a maqam and a tuning system, then click a note to hear it. A maqam is built from ajnas, short groups of three to five notes, and the bracket marks its lowest jins, which usually gives the maqam its name. Step sizes in red fall between the semitones of a piano. The maqamat and tuning systems come from the [DiArMaqAr](https://diarmaqar.netlify.app/) platform.
         body: |
           An open-source, open-access web platform for Arabic maqam theory, developed by Khyam Allami with the lab. It brings together tuning systems (tanāghīm), tetrachords (ajnās) and modes (maqāmāt) from historical treatises and performance practice in a single interactive environment, where they can be compared and heard. The archive was launched at AUB in July 2026.
         note: ISMIR 2026.
@@ -110,7 +110,6 @@
         widget: pol
         media: /assets/images/pol-poster.jpg
         alt: A top-down view of piano hammers.
-        caption: Press play and every hammer strike seeds the Game of Life on the right. Turn on Hear the cells and the grid filters the piano’s own sound. It runs in your browser and can be demanding on older laptops.
         body: |
           A browser-based application in which a top-down video of piano hammers seeds a Game of Life, whose column density acts as a live spectral filter on the piano's audio. It is written in plain JavaScript with Canvas 2D and Web Audio. It works with any top-down piano video.
         links:

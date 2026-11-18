@@ -137,7 +137,6 @@
     D.maqamat.forEach(function (m) { byMq[m.id] = m; });
     var nice = { rast: 'Rast', bayat: 'Bayat', hijaz: 'Hijaz', saba: 'Saba', segah: 'Segah', nahawand: 'Nahawand', kurd: 'Kurd' };
     var S = { mq: 'rast', ts: 'ronzevalle_1904' };
-    var timers = [];
 
     stage.innerHTML = '';
     var controls = html('div', 'w-controls');
@@ -157,7 +156,7 @@
       b.addEventListener('click', function () {
         S.mq = m.id;
         if (!m.idx[S.ts]) S.ts = 'ronzevalle_1904';
-        stop(); draw();
+        draw();
       });
       chipsM.appendChild(b);
     });
@@ -166,19 +165,18 @@
       b.dataset.id = s.id;
       b.addEventListener('click', function () {
         if (!byMq[S.mq].idx[s.id]) return;
-        S.ts = s.id; stop(); draw();
+        S.ts = s.id; draw();
       });
       chipsT.appendChild(b);
     });
 
     var svg = el('svg', { viewBox: '0 0 640 270', class: 'w-svg', role: 'img' }, stage);
     var foot = html('div', 'w-row w-foot');
-    var play = button('Play the scale', 'w-play');
     var readout = html('span', 'w-readout');
     readout.setAttribute('aria-live', 'polite');
-    foot.appendChild(play); foot.appendChild(readout);
+    foot.appendChild(readout);
     stage.appendChild(foot);
-    stage.appendChild(html('p', 'w-hint', 'Keyboard: with the pointer over the diagram, keys 1 to 8 (or A to K) play the notes and the space bar plays the scale.'));
+    stage.appendChild(html('p', 'w-hint', 'Keyboard: with the pointer over the diagram, keys 1 to 8 (or A to K) play the notes.'));
 
     var L = 34, R = 606, X = function (c) { return L + (R - L) * c / 1200; };
     var degrees = [];
@@ -249,25 +247,8 @@
       dot.classList.add('is-on');
       setTimeout(function () { dot.classList.remove('is-on'); }, 260);
     }
-    function stop() {
-      timers.forEach(clearTimeout);
-      timers = [];
-      play.textContent = 'Play the scale';
-    }
-    function playScale() {
-      if (timers.length) { stop(); return; }
-      if (!audio()) return;
-      var seq = degrees.concat(degrees.slice(0, -1).reverse()), gap = 0.36, t0 = ac.currentTime + 0.05;
-      seq.forEach(function (d, i) {
-        qanun(d.f, t0 + i * gap, i === 0 || i === seq.length - 1 ? 0.6 : 0.5);
-        timers.push(setTimeout(function () { flash(d.dot); }, (i * gap + 0.05) * 1000));
-      });
-      timers.push(setTimeout(stop, (seq.length * gap + 0.4) * 1000));
-      play.textContent = 'Stop';
-    }
-    play.addEventListener('click', playScale);
 
-    // keyboard: 1-8 or A S D F G H J K, space for the whole scale, while the pointer is over the diagram
+    // keyboard: 1-8 or A S D F G H J K, while the pointer is over the diagram
     var over = false;
     fig.addEventListener('pointerenter', function () { over = true; });
     fig.addEventListener('pointerleave', function () { over = false; });
@@ -277,8 +258,7 @@
       if (!over && !fig.contains(document.activeElement)) return;
       var i = '12345678'.indexOf(e.key);
       if (i < 0) i = ROW.indexOf(e.key.toLowerCase());
-      if (i >= 0 && degrees[i]) { e.preventDefault(); degrees[i].hit(); return; }
-      if (e.key === ' ') { e.preventDefault(); playScale(); }
+      if (i >= 0 && degrees[i]) { e.preventDefault(); degrees[i].hit(); }
     });
 
     draw();
@@ -454,8 +434,7 @@
     var play = button('Play', 'w-play'), hear = button('Hear the cells', 'w-btn');
     hear.setAttribute('aria-pressed', 'false');
     hear.title = 'Let the Game of Life filter the piano’s own sound';
-    var readout = html('span', 'w-readout', D.title);
-    foot.appendChild(play); foot.appendChild(hear); foot.appendChild(readout);
+    foot.appendChild(play); foot.appendChild(hear);
     stage.appendChild(foot);
 
     var pol = null;

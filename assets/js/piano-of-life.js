@@ -220,6 +220,11 @@
       const tmp = state.grid; state.grid = state.next; state.next = tmp;
     }
 
+    // Cells fade into whatever the page behind them is (the area's --tint).
+    const BG = (function () {
+      const t = getComputedStyle(gol).getPropertyValue('--tint').trim();
+      return /^#[0-9a-f]{6}$/i.test(t) ? t : '#F7FAF9';
+    })();
     function drawGol(dtMs) {
       const rect = gol.getBoundingClientRect();
       const w = rect.width, h = rect.height;
@@ -231,7 +236,7 @@
         for (let c = 0; c < state.cols; c++) {
           const a = state.alpha[r * state.cols + c];
           if (a < 0.02) continue;
-          golCtx.fillStyle = mix('#F7FAF9', P.accent, Math.min(1, a));
+          golCtx.fillStyle = mix(BG, P.accent, Math.min(1, a));
           golCtx.globalAlpha = Math.min(1, a);
           golCtx.fillRect(c * cw, r * ch, cw, ch);
         }
