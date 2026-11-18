@@ -30,12 +30,14 @@ groups:
         photo: /assets/images/sara-najem.jpeg
         what: Department of Physics and CAMS, AUB. Network science for music.
       - name: Elsa Maalouf
+        photo: /assets/images/elsa-maalouf.jpg
         url: https://www.aub.edu.lb/msfea/departments/che/Pages/default.aspx
         what: Co-PI, Music in Motion. Dance and movement. Department of Chemical Engineering, AUB.
       - name: Olivier Chiniara
         photo: /assets/images/olivier-chiniara.jpg
         what: Co-grantee, Music in Motion. Biomechanics and movement.
       - name: Jana Younes
+        photo: /assets/images/jana-younes.jpg
         what: Dancer and choreographer. Music in Motion.
       - name: Joelle Khoury
         what: Composer and pianist. Composition and performance.
